@@ -1,14 +1,16 @@
 @import url("reset.css");
 @import url("common.css");
 
-@import url("https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,300,regular,600,700,&display=swap");
 
 
 body{
     font-family: "Poppins", sans-serif;
-    font-size: 18px; 
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
     color: #9C9C9C;
-}
+    }
 
 .wrapper {
     overflow: clip;
@@ -16,6 +18,7 @@ body{
 
 	display: flex;
 	flex-direction: column;
+    
 }
 .wrapper > main {
 	flex-grow: 1;
@@ -36,32 +39,221 @@ body{
 .archievement__conteiner {
 }
 .archievement__header {
+      
+    margin-bottom: 40px;
+    
+   
+    
 }
 .header-archievement {
 }
 .header-archievement__items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex: 0 0 600px;
+    justify-content: flex-start;
 }
 .header-archievement__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: black;
+}
+
+.header-archievement__title::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 464px;
+    height: 2px;
+    background-color: #000000;
+    margin-left: 26px;
 }
 .header-archievement__strich {
 }
-.archievement__services {
+
+.archievement__services:not(:last-child) {
+    margin-bottom: 40px;
 }
+
+
 .services-offer {
+    
+    
 }
 .services-offer__item {
     display: flex;
-    
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0 -15px; */
+    gap: 30px;
+
 }
+
+
+
+
 .services-offer__img {
+    flex: 0 1 70%; 
+    overflow: hidden;
+
 }
 .services-offer__image {
+    max-width: 100%;
+    transition: transform 0.8s;
 }
+
+.services-offer__img:hover img{
+    transform: scale(1.02);
+}
+
 .services-offer__text {
+    flex: 0 1 30%;
+    padding-left: 30px;
+    align-items: center;
+
 }
 .text-block {
+    text-align: left;
 }
 .text-block__title {
+    display: block;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    
+    color: #333333;
+    transition: 0.5s;
 }
+.text-block__title:hover {
+    color: rgb(48, 48, 246);
+}
+
 .text-block__text {
+    font-weight: 300;
+    line-height: 1.6;
+    color: #9C9C9C;
+}
+
+
+
+
+.page__minimalistroom {
+}
+.room__container {
+   /* flex-wrap: wrap; */
+}
+.room__header {
+    
+}
+.header-room {
+   
+}
+.header-room__items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 53px;
+    align-items: center;
+}
+.header-room__title {
+   
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.8;
+    margin-bottom: -10px;
+    color: #000;
+}
+.header-room__text {
+    
+   
+    max-width:  518px; ;
+    
+    text-align: center;
+   
+    color: #000000;
+}
+.header-room__img {
+   
+    max-width: 100%;
+    margin-bottom: 100px;
+}
+.room__description {
+}
+.description-process {
+   
+}
+
+.description-process__items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 82px;
+    gap: 32px;
+}
+
+
+.design-process__description {
+    max-width: 584px;
+    
+}
+.design-process__description > p:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.overview-project {
+}
+.overview-project__item {
+    max-width: 584px;
+}
+.overview-project__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.4;
+    /* identical to box height, or 34px */
+    /* Grayscale/50 */
+    margin-bottom: 24px;
+    color: #333333;
+}
+
+
+.overview-project__description {
+    margin-bottom: 60px;
+
+}
+.overview-project__date {
+    max-width: 124px;
+    margin-right: 80px;
+    display: inline-block;
+}
+.overview-project__link {
+}
+.design-process {
+}
+.design-process__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.4;
+    /* identical to box height, or 34px */
+    /* Grayscale/50 */
+    margin-bottom: 24px;
+    color: #333333;
+}
+.design-process__description {
+}
+.design__portfolio {
+}
+.portfolio {
+}
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom: 100px;
+
+}
+.portfolio-items__images {
+}
+.portfolio-items__imag {
 }
