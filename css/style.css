@@ -126,7 +126,7 @@ body{
     margin-bottom: 20px;
     
     color: #333333;
-    transition: 0.5s;
+    transition: color 0.5s;
 }
 .text-block__title:hover {
     color: rgb(48, 48, 246);
@@ -142,6 +142,7 @@ body{
 
 
 .page__minimalistroom {
+    background: #D9D9D9;
 }
 .room__container {
    /* flex-wrap: wrap; */
@@ -193,7 +194,13 @@ body{
     gap: 32px;
 }
 
+.design-process__link{
+    transition: color 0.5s;
+}
 
+.design-process__link:hover {
+    color:  #2C3878; ;
+}
 .design-process__description {
     max-width: 584px;
     
@@ -228,6 +235,10 @@ body{
     display: inline-block;
 }
 .overview-project__link {
+    transition: color 0.5s;
+}
+.overview-project__link:hover {
+    color: #2C3878;
 }
 .design-process {
 }
@@ -250,10 +261,21 @@ body{
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
-    margin-bottom: 100px;
+
 
 }
-.portfolio-items__images {
+.portfolio-items__images:last-child {
+    margin-bottom: 100px;
+}
+.portfolio-items__images:hover{
+    transform: scale(1.03);
+}
+.portfolio-items__images{
+    transition: transform 0.8s;
+}
+.portfolio-items__imag:hover {
+    transform: scale(1.03);
 }
 .portfolio-items__imag {
+    transition: transform 0.8s;
 }
