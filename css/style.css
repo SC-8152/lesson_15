@@ -149,6 +149,7 @@ body{
    /* flex-wrap: wrap; */
 }
 .room__header {
+    padding-top: 100px;
     
 }
 
