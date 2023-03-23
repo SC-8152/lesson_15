@@ -276,11 +276,17 @@ body{
     transform: scale(1.03);
 }
 .portfolio-items__images{
+  
     transition: transform 0.8s;
 }
 .portfolio-items__imag:hover {
     transform: scale(1.03);
 }
 .portfolio-items__imag {
+    
     transition: transform 0.8s;
+}
+
+img{
+    max-width: 100%;
 }
